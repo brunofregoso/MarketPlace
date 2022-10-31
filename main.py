@@ -1,4 +1,4 @@
-
+#Python Program that simulates a marketplace
 
 def intro():
   
@@ -18,7 +18,7 @@ def intro():
 
 
 
-def anotheritem():
+def anotheritem(): #If the user wants another Item the function will prompt the user to repeat the introductory function 
   addtocart = input("Another item? ")
   if addtocart == "yes":
     intro()
@@ -45,7 +45,7 @@ Food = ["Kit Kat", "Cookies", "Pizza", "Pasta"]
 Collectibles = ["Super bowl ring", "Watch", "Movie posters", "Figurines"]
 Miscellaneous = ["Cooking set", "Grill spices", "Lego sets", "Sports gear"]
 
-def director(category):
+def director(category): #Function displays to user what is in stock by category 
   if category == "a":
     print("Here is what we have today " + str(VideoGames))
   if category == "b":
@@ -61,7 +61,7 @@ director(category)
 
 itemnum = input("What item would you like to view? 1, 2, 3, 4 ").lower()
 
-def pricelister(category, itemnum):
+def pricelister(category, itemnum): #Function access elements in an array to display individual price of each item 
   while category == "a":
     if itemnum == "1":
       print(VideoGames[0] + " is $60")
@@ -130,7 +130,7 @@ def pricelister(category, itemnum):
 
 pricelister(category, itemnum)
 
-def purchase(itemnum):
+def purchase(itemnum): #Prompts user if they wish to purchase 
   transaction = input("Would you like to purchase? ").lower()
   if transaction == "yes":
     email = input("What is your email? ")
